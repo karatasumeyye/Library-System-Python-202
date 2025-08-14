@@ -1,0 +1,5 @@
+uv.lock
+pyproject.toml
+.python-version
+__pycache__/
+*.py[cod]
