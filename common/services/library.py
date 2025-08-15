@@ -5,7 +5,7 @@ from common.models.book import Book
 
 class Library:
 
-    def __init__(self, file_path: str = "coomon/data/library.json"):
+    def __init__(self, file_path: str = "common/data/library.json"):
         self.file_path = Path(file_path)
         self.books : List[Book] = []
         self.load_books()
@@ -67,4 +67,22 @@ class Library:
         raise ValueError (f"ISBN {isbn} numaralı kitap bulunamadı.")
 
 
+
+    # Stage 2 
+
+    def add_book_from_api(self, book_data: dict) -> bool:
+        """API'den gelen veriyi kullanarak kitap ekler."""
+        if not book_data:
+            print("Kitap eklenemedi. Veri yok.")
+            return False
+
+        new_book = Book(
+            title=book_data["title"],
+            author=book_data["authors"],
+            isbn=book_data["isbn"]
+        )
+        self.books.append(new_book)
+        self.save_books()
+        print(f"Kitap eklendi: {new_book.title} - {new_book.author}")
+        return True
 

@@ -4,5 +4,17 @@
         "author": "Dostoyevski",
         "isbn": "1234567890",
         "added_at": "2025-08-14T17:20:29.655291"
+    },
+    {
+        "title": "The Fellowship of the Ring",
+        "author": "J.R.R. Tolkien",
+        "isbn": "9780261103573",
+        "added_at": "2025-08-15T17:15:38.858343"
+    },
+    {
+        "title": "Harry Potter and the Sorcerers Stone",
+        "author": "Bilinmiyor",
+        "isbn": "9780439554930",
+        "added_at": "2025-08-15T17:16:58.022572"
     }
 ]
