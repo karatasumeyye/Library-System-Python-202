@@ -7,7 +7,7 @@ Bu proje; kütüphane envanterini (kitap ekleme/listeleme/güncelleme/silme) ve 
 - **Aşama 4 (API – Veritabanı):** FastAPI + SQLAlchemy (kalıcı DB, varsayılan: SQLite). Üretime daha yakın bir katmanlı mimari kullanır.
 
 ## **📁 Dizin Yapısı**
-
+```bash
 Library System-Python 202/
 ├─ common/
 │ ├─ data/
@@ -46,6 +46,8 @@ Library System-Python 202/
 ├─ .env.example # Örnek ortam değişkenleri
 ├─ .env # Gerçek ortam değişkenleri (git'e eklenmez)
 └─ [README.md](http://readme.md/)
+
+```
 
 - Stage 1–3 klasörlerinde test dosyaları (`test_*.py`) bulunur, böylece her aşamadaki fonksiyonellik bağımsız test edilebilir.
 - `common/` klasörü; **veri**, **model** ve **servis** kodlarının aşamalar arasında paylaşılmasını sağlar.
