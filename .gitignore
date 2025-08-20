@@ -3,3 +3,5 @@ pyproject.toml
 .python-version
 __pycache__/
 *.py[cod]
+.env
+library.db

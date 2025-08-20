@@ -1,5 +1,13 @@
 httpx
 fastapi
 uvicorn
-pydantic
+pydantic # Veri doğrulama / şema tanımları
 pytest
+sqlalchemy # ORM (veritabanı yönetimi)
+aiosqlite
+python-dotenv==1.0.1      # .env dosyasından ortam değişkenlerini okumak için
+python-jose[cryptography]==3.3.0  # JWT token oluşturma/doğrulama
+passlib[bcrypt]==1.7.4    # Şifreleri hashlemek için (bcrypt ile)
+email-validator==2.1.1     # EmailStr için zorunlu
+dnspython==2.7.0
+email-validator==2.2.0
